@@ -1,1 +1,1 @@
-# traineewebsite
+# DevSoc Trainee Application Website
