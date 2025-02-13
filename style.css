@@ -220,5 +220,9 @@ p {
 .social-links img {
     width: 55px;
     height: 40px;
+    transition: transform 0.3s ease-in-out;
 }
 
+.social-links:hover img {
+    transform: scale(1.2);
+}
