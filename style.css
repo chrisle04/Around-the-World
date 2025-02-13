@@ -227,3 +227,14 @@ p {
 .social-links:hover img {
     transform: scale(1.2);
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    font-size: 14px;
+}
+
+

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <br>
     <title>Around the World</title>
+    <link rel="icon" type="image/png" href="images/jetta.png">
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="top-content">
             <h1>AROUND THE <i>WORLD</i></h1>
-            <h2>CHRISTOPHER LE</h2>
+            <h2>by Chris</h2>
             <div class="earth"></div>
             <p><b> places <i><span class="highlight">around the world</span></i> 
                 which represent me !</b></p>
@@ -33,8 +33,7 @@
                 <p><b><span class="highlight">Miami</span></b>, FL, USA</p>
                 <p>- home to my favorite NBA team, the Miami Heat</p>
                 <p>- used to be home to my GOAT Jimmy Butler (he got traded ☹️)</p>
-                <p>- called the magic city because of its rapid growth compared to magic</p>
-                <p>- represents the success i hope to achieve</p>
+                <p>- also home to the bay harbour butcher & tony montana</p>
             </div>
             <img src="images/miami.png" alt="Miami Cityscape" class="miami">
         </div>
@@ -45,17 +44,17 @@
                 <p><b><span class="highlight">Mỹ Tho</span></b> and <b><span 
                     class="highlight">Nha Trang</span></b>, Vietnam</p>
                 <p>- the cities where my family are from</p>
-                <p>- important to me to understand the lives of my family before Australia</p>
                 <p>- visiting helped me appreciate my culture even more</p>
+                <p>- also got to visit Saigon, Hanoi, Huế, Hội An and Da Nang</p>
             </div>
         </div>
         <br>
         <div class="places-container">
             <div class="places-nz">
                 <p><b><span class="highlight">Queenstown</span></b>, New Zealand</p>
-                <p>- most beautiful place i've visited</p>
-                <p>- perfect weather, perfect scenery</p>
-                <p>- didn't know how much i valued peace in life until i visited</p>
+                <p>- the most beautiful place i've visited</p>
+                <p>- perfect weather, perfect scenery, peaceful</p>
+                <p>- a dream to one day live here</p>
             </div>
             <img src="images/nz.png" alt="NZ" class="nz">
         </div>
@@ -74,8 +73,9 @@
             <div class="places-home">
                 <p><b><span class="highlight">Home</span></b></p>
                 <p>- where i live and study Software Engineering in my 3rd year</p>
-                <p>- 1hr travel time to uni means 1hr NBA Youngboy, Ye & Lady Gaga listening session</p>
-                <p>- where my two favourite restuarants were founded: GYG and Awafi</p>
+                <p>- 1hr travel time to uni means 1hr NBA Youngboy, Kanye & Lady Gaga listening session</p>
+                <p>- where my two favourite restuarants were founded: GYG & Awafi Charcoal Chicken</p>
+                <p>- where i created this website using tutorials off youtube</p>
             </div>
             <img src="images/home.png" alt="Home" class="home">
         </div>
@@ -95,7 +95,7 @@
             </div>
             <div class="image-item">
                 <img src="images/mytho.png" alt="my tho">
-                <p>my dad's childhood home (photo taken by me)</p>
+                <p>family's old home in mỹ tho, vn (photo taken by me)</p>
             </div>
             <div class="image-item">
                 <img src="images/queenst.png" alt="queenstown">
@@ -107,7 +107,7 @@
             </div>
             <div class="image-item">
                 <img src="images/feed.png" alt="feed">
-                <p>top uni feed -> GYG burrito w/ spicy grilled chicken, add corriander and diced onion </p>
+                <p>proper uni feed -> GYG burrito w/ spicy grilled chicken, add corriander and diced onion </p>
             </div>
         </div>
         
@@ -132,8 +132,31 @@
                 </a>
             </div>
         </div>
+        <div class="back-to-top" onclick="scrollToTop()">
+            <u>✈️ fly back to the top</u>
+        </div>
+        <br>
+        
         
     </div>
+    <script>
+        window.addEventListener("scroll", function () {
+            var button = document.querySelector(".back-to-top");
+            var scrollHeight = document.documentElement.scrollHeight;
+            var scrollPosition = window.innerHeight + window.scrollY;
+    
+            if (scrollPosition >= scrollHeight - 40) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        });
+    
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "instant" });
+        }
+    </script>
+    
     
 </body>
 </html>
