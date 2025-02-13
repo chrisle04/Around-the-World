@@ -33,6 +33,15 @@ h1{
     margin: 20px 0;
 }
 
+.plane-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+
 .earth{
     position: relative;
     width: 400px;
@@ -100,6 +109,7 @@ p {
     width: 300px; 
     height: 300px; 
     object-fit: cover;
+    transform: rotate(15deg);
 }
 
 .places-vn {
@@ -116,6 +126,7 @@ p {
     width: 300px; 
     height: 300px; 
     object-fit: cover;
+    transform: rotate(15deg);
 }
 
 .places-nz {
@@ -132,6 +143,7 @@ p {
     width: 300px; 
     height: 300px; 
     object-fit: cover;
+    transform: rotate(15deg);
 }
 
 .places-prague {
@@ -148,6 +160,7 @@ p {
     width: 300px; 
     height: 300px; 
     object-fit: cover;
+    transform: rotate(15deg);
 }
 
 .places-home {
@@ -164,6 +177,7 @@ p {
     width: 300px; 
     height: 300px; 
     object-fit: cover;
+    transform: rotate(15deg);
 }
 
 .image-gallery {
