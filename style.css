@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Keep content from getting pushed up */
+    align-items: center;
+    height: 100vh;
+    background: rgb(7, 5, 31);
+    overflow-x: hidden;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+h1{
+    margin: 20px 0;
+}
+
+.earth{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: transparent url(images/earth.png);
+    background-size: cover;
+    box-shadow: inset 0px -20px 50px 10px #00ffff80,
+        0px 0px 30px 6px #00ffff40;
+    transform-style: preserve-3d;
+    transform: rotate(15deg);
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 530px 0;
+    }
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-top: 20px; 
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.highlight {
+    color: #498db8;
+}
+
+.places-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.places-miami {
+    width: 30%;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+}
+
+.miami{
+    box-shadow: inset 0px -20px 50px 10px #00ffff80,
+        0px 0px 30px 6px #00ffff40;
+    border-radius: 50%; 
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover;
+}
+
+.places-vn {
+    width: 30%;
+    text-align: right;
+    color: white;
+    font-size: 18px;
+}
+
+.vn{
+    box-shadow: inset 0px -20px 50px 10px #00ffff80,
+        0px 0px 30px 6px #00ffff40;
+    border-radius: 50%; 
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover;
+}
+
+.places-nz {
+    width: 30%;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+}
+
+.nz{
+    box-shadow: inset 0px -20px 50px 10px #00ffff80,
+        0px 0px 30px 6px #00ffff40;
+    border-radius: 50%; 
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover;
+}
+
+.places-prague {
+    width: 30%;
+    text-align: right;
+    color: white;
+    font-size: 18px;
+}
+
+.prague{
+    box-shadow: inset 0px -20px 50px 10px #00ffff80,
+        0px 0px 30px 6px #00ffff40;
+    border-radius: 50%; 
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.image-item img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.image-item p {
+    text-align: center;
+}
+
+.bottom-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
