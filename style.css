@@ -192,7 +192,13 @@ p {
     height: 400px;
     object-fit: cover;
     border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 }
+
+.image-item:hover img {
+    transform: scale(1.05);
+}
+
 .image-item p {
     text-align: center;
 }
